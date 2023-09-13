@@ -29,7 +29,7 @@ export default function ParagraphEdit({ children, edit = false }) {
   } else {
     componentContent = (
       <>
-        <p>{content}</p>
+        <p onClick={handleEditText}>{content}</p>
         <button onClick={handleEditText}>Edit</button>
         <button onClick={() => setEditMode(true)}>Edit (arrow function)</button>
       </>
