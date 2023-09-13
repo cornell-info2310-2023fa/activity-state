@@ -18,6 +18,7 @@ export default function ParagraphEdit({ children, editMode = false }) {
       <>
         <textarea defaultValue={children} rows={5} />
         <button onClick={handleSaveText}>Save</button>
+        <button onClick={() => console.log("TODO: save text")}>Save (arrow function)</button>
       </>
     )
   } else {
@@ -25,6 +26,7 @@ export default function ParagraphEdit({ children, editMode = false }) {
       <>
         <p>{children}</p>
         <button onClick={handleEditText}>Edit</button>
+        <button onClick={() => console.log("TODO: edit text")}>Edit (arrow function)</button>
       </>
     )
   }
